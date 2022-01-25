@@ -15,7 +15,7 @@ margin:1%;
 */
 body{
 	
-    font-family: 'Verdana', 'Times New Roman', serif;
+    font-family: Verdana, 'Times New Roman';
     background-color: black;
     color: #FFFFFF;
     margin-top: 25px;
@@ -36,7 +36,6 @@ h1 {
 
 h2 {
     font-size: 32px;
-    text-align: center;
     text-shadow: #808080 2px 4px;
     padding:15px;
 }
@@ -70,7 +69,9 @@ have a 3px solid white border on all sides.
 div {
     min-height: 100px;
     padding: 20px;
-    border:white solid 3px;
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;
 }
 
 .intro{
@@ -82,25 +83,21 @@ div {
     background-color: #ff0000;
     text-align: right;
     margin-left: 50px;
-    border-bottom: 3px solid white;
-    border-left: 10px solid white;
+    border-width: 0px 0px 3px 10px;
 }
 
 .blue{
     background-color: #0000ff;
     text-align: left;
     margin-right: 50px;
-    border-right: 10px solid white;
-    border-bottom: 3px solid white;
-    
+    border-width: 0px 10px 3px 0px;
 }
 
 .yellow{
     background-color: #ffff00;
     text-align: right;
     margin-left: 50px;
-    border-bottom: 3px solid white;
-    border-left: 10px solid white;
+    border-width: 0px 0px 3px 10px;
 }
 
 div.yellow p{
@@ -117,8 +114,7 @@ div.yellow h2 {
     background-color: #008500;
     text-align: left;
     margin-right: 50px;
-    border-right: 10px solid white;
-    border-bottom: 3px solid white;
+    border-width: 0px 10px 3px 0px;
 }
 
 span {
